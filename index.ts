@@ -1,7 +1,7 @@
 import * as sha256 from 'crypto-js/sha256';
 import * as jwt from 'jsonwebtoken';
 
-class dblessAuth {
+export default class dblessAuth {
   constructor(
     url: String,
     rule: String[],
@@ -34,7 +34,7 @@ class dblessAuth {
     }
   };
 
-  verifyToken = (crypted: String) => {
+  private verifyToken = (crypted: String) => {
     if (
       crypted[this.rule[0].split(':')[0]] == this.rule[0].split(':')[1] &&
       crypted[this.rule[1].split(':')[0]] == this.rule[1].split(':')[1] &&
@@ -74,5 +74,3 @@ class dblessAuth {
     }
   };
 }
-
-export default dblessAuth;
