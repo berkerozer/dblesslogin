@@ -27,7 +27,7 @@ Rule parameter is an array and contains 3 string this strings mean index:value y
 
 [ '0:0', '1:0', '2:0' ] => **000**a12fa9b916eb9078f8d98a7864e697ae83ed54f5146bd84452cdafd043c19
 
-[ '0:a', '10:2', '63:f' ] => **0**a12fa9b91**2**eb9078f8d98a7864e697ae83ed54f5146bd84452cdafd043c1**f**<br>
+[ '0:a', '10:2', '63:f' ] => **a**012fa9b91**2**eb9078f8d98a7864e697ae83ed54f5146bd84452cdafd043c1**f**<br>
 You just have to create your own rule.
 
 ## Register Method
@@ -55,5 +55,3 @@ if(isAuth(token)){
 ## License
 
 This project is licenced under the [MIT License](http://opensource.org/licenses/mit-license.html).
-
-Any bundled fonts are copyright to their respective authors and mostly under MIT or [SIL OFL](http://scripts.sil.org/OFL).
